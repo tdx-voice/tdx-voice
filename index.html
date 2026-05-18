@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TDX Voice | Managed VoIP for Small Business</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:        #1a1a1e;
+      --bg2:       #22222a;
+      --accent:    #d94f4f;
+      --accent2:   #e86060;
+      --text:      #e8e8ec;
+      --muted:     #7a7a88;
+      --border:    rgba(217,79,79,0.18);
+    }
+
+    html, body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+    }
+
+    /* subtle dot-grid background */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: radial-gradient(circle, rgba(217,79,79,0.08) 1px, transparent 1px);
+      background-size: 28px 28px;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* top accent bar */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent), var(--accent2), transparent);
+      z-index: 10;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 3rem 1.5rem;
+    }
+
+    .card {
+      background: var(--bg2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      max-width: 560px;
+      width: 100%;
+      padding: 3rem 3rem 2.5rem;
+      text-align: center;
+      box-shadow: 0 8px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.03);
+      animation: rise 0.7s cubic-bezier(0.22,1,0.36,1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(24px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .logo-wrap {
+      margin-bottom: 1.8rem;
+    }
+
+    .logo-wrap img {
+      width: 240px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .tagline {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 1rem;
+      animation: rise 0.7s 0.15s cubic-bezier(0.22,1,0.36,1) both;
+    }
+
+    .divider {
+      width: 48px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      margin: 1.25rem auto;
+      border-radius: 2px;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      line-height: 1.75;
+      color: rgba(232,232,236,0.7);
+      margin-bottom: 2rem;
+      animation: rise 0.7s 0.25s cubic-bezier(0.22,1,0.36,1) both;
+    }
+
+    .contact-block {
+      border: 1px solid var(--border);
+      border-radius: 3px;
+      padding: 1.25rem 1.5rem;
+      background: rgba(217,79,79,0.04);
+      animation: rise 0.7s 0.35s cubic-bezier(0.22,1,0.36,1) both;
+    }
+
+    .contact-label {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-email {
+      display: inline-block;
+      font-size: 1.05rem;
+      font-weight: 500;
+      color: var(--accent2);
+      text-decoration: none;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+
+    .contact-email:hover { color: #fff; }
+
+    .footer {
+      margin-top: 2.5rem;
+      font-size: 0.7rem;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      text-transform: uppercase;
+      animation: rise 0.7s 0.45s cubic-bezier(0.22,1,0.36,1) both;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+
+      <div class="logo-wrap">
+        <!-- Replace src with the actual path to your logo on your server -->
+        <img src="tdxvoice_logo2.png" alt="TDX Voice" />
+      </div>
+
+      <p class="tagline">Business Calls. Handled.</p>
+
+      <div class="divider"></div>
+
+      <p class="description">
+        TDX Voice delivers managed VoIP and hosted PBX solutions built for small businesses across the country. Professional-grade phone systems — without the enterprise complexity.
+      </p>
+
+      <div class="contact-block">
+        <p class="contact-label">Get in touch</p>
+        <a class="contact-email" href="mailto:info@tdxvoice.com">info@tdxvoice.com</a>
+      </div>
+
+    </div>
+
+    <p class="footer">TDX Voice &nbsp;·&nbsp; Ogden, UT &nbsp;·&nbsp; Serving Small Businesses Nationwide</p>
+  </div>
+</body>
+</html>
