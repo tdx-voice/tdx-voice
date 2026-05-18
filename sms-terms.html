@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TDX Voice | Managed VoIP for Small Business</title>
+  <title>SMS Terms & Conditions | TDX Voice</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
   <style>
@@ -20,7 +20,7 @@
     }
 
     html, body {
-      height: 100%;
+      min-height: 100%;
       background: var(--bg);
       color: var(--text);
       font-family: 'DM Sans', sans-serif;
@@ -53,18 +53,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      padding: 3rem 1.5rem;
+      padding: 4rem 1.5rem 5rem;
     }
 
     .card {
       background: var(--bg2);
       border: 1px solid var(--border);
       border-radius: 4px;
-      max-width: 560px;
+      max-width: 620px;
       width: 100%;
       padding: 3rem 3rem 2.5rem;
-      text-align: center;
       box-shadow: 0 8px 60px rgba(0,0,0,0.5), 0 0 0 1px rgba(255,255,255,0.03);
       animation: rise 0.7s cubic-bezier(0.22,1,0.36,1) both;
     }
@@ -75,70 +73,81 @@
     }
 
     .logo-wrap {
-      margin-bottom: 1.8rem;
+      text-align: center;
+      margin-bottom: 2rem;
     }
 
     .logo-wrap img {
-      width: 240px;
+      width: 180px;
       max-width: 100%;
       height: auto;
     }
 
-    .tagline {
+    .page-title {
       font-family: 'Rajdhani', sans-serif;
       font-size: 1.05rem;
       font-weight: 600;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--accent);
+      text-align: center;
       margin-bottom: 1rem;
-      animation: rise 0.7s 0.15s cubic-bezier(0.22,1,0.36,1) both;
     }
 
     .divider {
       width: 48px;
       height: 2px;
       background: linear-gradient(90deg, var(--accent), var(--accent2));
-      margin: 1.25rem auto;
+      margin: 0 auto 2rem;
       border-radius: 2px;
     }
 
-    .description {
+    section {
+      margin-bottom: 1.75rem;
+    }
+
+    section:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    p {
       font-size: 0.95rem;
       line-height: 1.75;
       color: rgba(232,232,236,0.7);
-      margin-bottom: 2rem;
-      animation: rise 0.7s 0.25s cubic-bezier(0.22,1,0.36,1) both;
     }
 
-    .contact-block {
-      border: 1px solid var(--border);
-      border-radius: 3px;
-      padding: 1.25rem 1.5rem;
-      background: rgba(217,79,79,0.04);
-      animation: rise 0.7s 0.35s cubic-bezier(0.22,1,0.36,1) both;
-    }
-
-    .contact-label {
-      font-family: 'Rajdhani', sans-serif;
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.6rem;
-    }
-
-    .contact-email {
-      display: inline-block;
-      font-size: 1.05rem;
-      font-weight: 500;
+    p a {
       color: var(--accent2);
       text-decoration: none;
-      letter-spacing: 0.02em;
       transition: color 0.2s;
     }
 
-    .contact-email:hover { color: #fff; }
+    p a:hover { color: #fff; }
+
+    .back-link {
+      margin-top: 2.5rem;
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+      text-align: center;
+      display: block;
+    }
+
+    .back-link:hover { color: var(--accent2); }
 
     .footer {
       margin-top: 2.5rem;
@@ -148,14 +157,6 @@
       text-transform: uppercase;
       animation: rise 0.7s 0.45s cubic-bezier(0.22,1,0.36,1) both;
     }
-
-    .footer a {
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.2s;
-    }
-
-    .footer a:hover { color: var(--accent2); }
   </style>
 </head>
 <body>
@@ -166,26 +167,44 @@
         <img src="tdxvoice_logo2.png" alt="TDX Voice" />
       </div>
 
-      <p class="tagline">Business Calls. Handled.</p>
-
+      <p class="page-title">SMS Terms &amp; Conditions</p>
       <div class="divider"></div>
 
-      <p class="description">
-        TDX Voice delivers managed VoIP and hosted PBX solutions built for small businesses across the country. Professional-grade phone systems — without the enterprise complexity.
-      </p>
+      <section>
+        <h2>About</h2>
+        <p>TDX Voice provides managed VoIP and business communications services to small business clients. SMS messaging is used exclusively for operational communication with existing clients and vendors, and to receive one-time passcodes and MFA verification codes from third-party business services.</p>
+      </section>
 
-      <div class="contact-block">
-        <p class="contact-label">Get in touch</p>
-        <a class="contact-email" href="mailto:info@tdxvoice.com">info@tdxvoice.com</a>
-      </div>
+      <section>
+        <h2>Who We Message</h2>
+        <p>TDX Voice sends and receives SMS only with individuals who have an established business relationship with TDX Voice and have provided a mobile number through onboarding or ongoing account management.</p>
+      </section>
+
+      <section>
+        <h2>Message Types</h2>
+        <p>Messages are conversational and operational in nature. No marketing or promotional messages are sent.</p>
+      </section>
+
+      <section>
+        <h2>Message Frequency</h2>
+        <p>Message frequency varies based on business need.</p>
+      </section>
+
+      <section>
+        <h2>Opt-Out</h2>
+        <p>Reply <strong>STOP</strong> at any time to opt out of non-operational SMS communication.</p>
+      </section>
+
+      <section>
+        <h2>Help</h2>
+        <p>Reply <strong>HELP</strong> for assistance. You may also contact us at <a href="mailto:info@tdxvoice.com">info@tdxvoice.com</a>. Message and data rates may apply depending on your mobile carrier and plan.</p>
+      </section>
+
+      <a class="back-link" href="/">&#8592; Back to TDX Voice</a>
 
     </div>
 
-    <p class="footer">
-      TDX Voice &nbsp;·&nbsp; Ogden, UT &nbsp;·&nbsp; Serving Small Businesses Nationwide
-      &nbsp;&nbsp;|&nbsp;&nbsp;
-      <a href="/sms-terms.html">SMS Terms &amp; Conditions</a>
-    </p>
+    <p class="footer">TDX Voice &nbsp;·&nbsp; Ogden, UT &nbsp;·&nbsp; Serving Small Businesses Nationwide</p>
   </div>
 </body>
 </html>
